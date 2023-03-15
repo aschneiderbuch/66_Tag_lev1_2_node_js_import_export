@@ -101,6 +101,36 @@ function doppelteWerteEntfernenMitForSchleife(paraArr) {
     return ergebniss
 }
 
+/* funktion bekommt 2 Parameter übergeben.
+Rückgabe soll ZufallsZahl zwischen diesen 2 Parametern sein */
+
+function zufallsZahl_zwischenZweiZahlen(zahl1, zahl2) {
+
+     let ergebniss = Math.floor(Math.random() * (zahl2 - zahl1) + zahl1)
+
+     return ergebniss
+
+}
+
+
+/* funktion der ein String übergeben wird
+der erste Buchstabe des Strings soll groß geschrieben werden */
+function ersteBuchstabe_VonString_InGroßUmwandeln(paraStr){
+    let s = paraStr
+    let länge = s.length;
+    let gesplittet = s.slice(0,1)
+    let rest = s.slice(1, länge)
+    let groß = gesplittet.toLocaleUpperCase()
+    let ergebniss = groß + rest
+
+
+   return ergebniss
+}
+
+console.log(ersteBuchstabe_VonString_InGroßUmwandeln("test"))
+
+
+
 
 
 export {
@@ -120,5 +150,7 @@ export {
     doppelteWerteEntfernenMitSet,
     doppelteWerteEntfernenMitFilter,
     doppelteWerteEntfernenMitForSchleife,
+
+    zufallsZahl_zwischenZweiZahlen,
 
 };

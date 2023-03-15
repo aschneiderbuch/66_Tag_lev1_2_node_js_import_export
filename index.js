@@ -15,6 +15,8 @@ import { ersteElement,
     doppelteWerteEntfernenMitFilter,
     doppelteWerteEntfernenMitForSchleife,
 
+    zufallsZahl_zwischenZweiZahlen,
+
 } from "./function.js";
 
 import { names, numbers } from "./data.js";
@@ -46,3 +48,5 @@ console.log(doppelteWerteEntfernenMitSet(numbers));
 console.log(doppelteWerteEntfernenMitSet(names));
 console.log(doppelteWerteEntfernenMitFilter(numbers));
 console.log(doppelteWerteEntfernenMitForSchleife(numbers));
+
+console.log(zufallsZahl_zwischenZweiZahlen(1, 10))
