@@ -23,6 +23,7 @@ import { ersteElement,
     ganzeString_inGroßbuchstabenUmwandeln,
 
     übereinstimmungDerZweiPara,
+    stimmtDerLetzteBuchstabeÜberein,
 
 } from "./function.js";
 
@@ -65,3 +66,6 @@ console.log(ganzeString_inGroßbuchstabenUmwandeln("guten morgen"))
 
 console.log(übereinstimmungDerZweiPara("test","t"))
 console.log(übereinstimmungDerZweiPara("test","q"))
+
+console.log(stimmtDerLetzteBuchstabeÜberein("test","t"))
+console.log(stimmtDerLetzteBuchstabeÜberein("test","q"))

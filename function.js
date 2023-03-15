@@ -159,6 +159,10 @@ function übereinstimmungDerZweiPara(para1, para2) {
     return ergebniss()
 }
 
+const stimmtDerLetzteBuchstabeÜberein = (para1, para2) => {
+    return para1[para1.length - 1] === para2[para2.length - 1] ? true : false
+}
+
 
 
 export {
@@ -187,5 +191,6 @@ export {
     ganzeString_inGroßbuchstabenUmwandeln,
 
     übereinstimmungDerZweiPara,
+    stimmtDerLetzteBuchstabeÜberein,
 
 };
