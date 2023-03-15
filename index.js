@@ -17,6 +17,13 @@ import { ersteElement,
 
     zufallsZahl_zwischenZweiZahlen,
 
+    ersteBuchstabe_VonString_InGroßUmwandeln,
+    ersteBuchstabe_VonString_InGroßUmwandeln_ohneSlice,
+
+    ganzeString_inGroßbuchstabenUmwandeln,
+
+    übereinstimmungDerZweiPara,
+
 } from "./function.js";
 
 import { names, numbers } from "./data.js";
@@ -50,3 +57,11 @@ console.log(doppelteWerteEntfernenMitFilter(numbers));
 console.log(doppelteWerteEntfernenMitForSchleife(numbers));
 
 console.log(zufallsZahl_zwischenZweiZahlen(1, 10))
+
+console.log(ersteBuchstabe_VonString_InGroßUmwandeln("hallo"))
+console.log(ersteBuchstabe_VonString_InGroßUmwandeln_ohneSlice("abendessen"))
+
+console.log(ganzeString_inGroßbuchstabenUmwandeln("guten morgen"))
+
+console.log(übereinstimmungDerZweiPara("test","t"))
+console.log(übereinstimmungDerZweiPara("test","q"))

@@ -106,30 +106,58 @@ Rückgabe soll ZufallsZahl zwischen diesen 2 Parametern sein */
 
 function zufallsZahl_zwischenZweiZahlen(zahl1, zahl2) {
 
-     let ergebniss = Math.floor(Math.random() * (zahl2 - zahl1) + zahl1)
+    let ergebniss = Math.floor(Math.random() * (zahl2 - zahl1) + zahl1)
 
-     return ergebniss
+    return ergebniss
 
 }
 
 
 /* funktion der ein String übergeben wird
 der erste Buchstabe des Strings soll groß geschrieben werden */
-function ersteBuchstabe_VonString_InGroßUmwandeln(paraStr){
+function ersteBuchstabe_VonString_InGroßUmwandeln(paraStr) {
     let s = paraStr
     let länge = s.length;
-    let gesplittet = s.slice(0,1)
+    let gesplittet = s.slice(0, 1)
     let rest = s.slice(1, länge)
     let groß = gesplittet.toLocaleUpperCase()
     let ergebniss = groß + rest
 
 
-   return ergebniss
+    return ergebniss
 }
 
-console.log(ersteBuchstabe_VonString_InGroßUmwandeln("test"))
+function ersteBuchstabe_VonString_InGroßUmwandeln_ohneSlice(paraStr) {
+    let s = paraStr
+    let ergebniss = s[0].toLocaleUpperCase() + s.slice(1, s.length)
+    return ergebniss
+}
+
+/* ganze String soll in großbuchstaben  */
+function ganzeString_inGroßbuchstabenUmwandeln(paraStr) {
+    let s = paraStr
+
+    let ergebniss = s.toLocaleUpperCase()
+
+    return ergebniss
+}
 
 
+/* funktion die prüft ob letzte Buchstabe von 1.para mit 2.para übereinstimmt
+output true oder false */
+function übereinstimmungDerZweiPara(para1, para2) {
+    let a = para1  /* Test */
+    let b = para2  /* t  / q */
+
+    let aEnde = a.slice(a.length - 1, a.length)
+    
+    function ergebniss () {
+        if (aEnde === b) { return "true"}
+        else {return "false"}
+    }
+
+    return ergebniss()
+}
 
 
 
@@ -152,5 +180,12 @@ export {
     doppelteWerteEntfernenMitForSchleife,
 
     zufallsZahl_zwischenZweiZahlen,
+
+    ersteBuchstabe_VonString_InGroßUmwandeln,
+    ersteBuchstabe_VonString_InGroßUmwandeln_ohneSlice,
+
+    ganzeString_inGroßbuchstabenUmwandeln,
+
+    übereinstimmungDerZweiPara,
 
 };
