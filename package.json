@@ -1,0 +1,20 @@
+{
+  "name": "66_tag_lev1_2_node_js_import_export",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aschneiderbuch/66_Tag_lev1_2_node_js_import_export.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aschneiderbuch/66_Tag_lev1_2_node_js_import_export/issues"
+  },
+  "homepage": "https://github.com/aschneiderbuch/66_Tag_lev1_2_node_js_import_export#readme"
+}
